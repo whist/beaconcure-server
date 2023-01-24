@@ -1,0 +1,14 @@
+services:
+  api:
+    image: node:latest
+    working_dir: /usr/src/app
+    command: bash -c "npm ci && node ace serve --watch"
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 3333:3333
+    networks:
+      - beaconcure
+networks:
+  beaconcure:
+    driver: bridge

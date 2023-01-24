@@ -1,0 +1,22 @@
+{
+  "tables": [
+    {
+      "title":"user",
+      "rows":3,
+      "notes":"table for users",
+      "columns":["uid","fname","cid","created_date"]
+    },{
+      "title":"user_category_name",
+      "rows":4,
+      "columns_count":2,
+      "notes":"table for user category",
+      "columns":["id","name"]
+    },{
+      "title":"user_category",
+      "rows":7,
+      "columns_count":2,
+      "notes":"table for connecting user & category",
+      "columns":["uid","cid"]
+    }
+  ]
+}
